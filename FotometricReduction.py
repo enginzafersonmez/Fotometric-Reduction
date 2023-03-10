@@ -35,24 +35,18 @@ from glob import glob
 from astropy.io import fits
 import ccdproc
 from astropy import units as u
-from matplotlib.ticker import AutoMinorLocator, FormatStrFormatter, MultipleLocator
-from lmfit.models import GaussianModel, LorentzianModel, VoigtModel, PolynomialModel, ConstantModel, ExponentialGaussianModel, ExponentialModel
-import scipy.stats as stats
-from sklearn.metrics import r2_score
+from lmfit.models import GaussianModel, PolynomialModel
 import pandas as pd
 import astroalign as aa
-from astropy.io.fits.convenience import update
 from astropy.nddata import CCDData
-from numpy.lib.twodim_base import tri
 from ccdproc.core import ccd_process
 from astropy.visualization import (
     PowerStretch, ZScaleInterval, ImageNormalize)
-from photutils.aperture import CircularAperture, CircularAnnulus
+from photutils.aperture import CircularAnnulus
 from photutils.aperture import aperture_photometry
-from astropy.visualization import simple_norm
 from astropy.stats import sigma_clipped_stats
 from photutils.utils import calc_total_error
-from photutils.centroids import centroid_sources, centroid_com, centroid_2dg
+from photutils.centroids import centroid_sources, centroid_2dg
 import matplotlib.patches as pat
 
 
