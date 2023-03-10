@@ -1,4 +1,4 @@
-# **Photometric Analysis and Data Reduction of the NYVir Star**
+# **Analysis of photometric data of an observed star**
 
 ## **ENG**
 This code was used for the photometric reduction of an observed star and calculation of its light curve.
